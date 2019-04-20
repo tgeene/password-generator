@@ -26,8 +26,6 @@ while max_char < min_char:
 	else:
 		print("Invalid Input. Please Try Again.")
 
-pass_len = random.randrange(min_char, max_char+1)
-
 pass_str = 0
 while pass_str < 1 or pass_str > 4:
 	strength = input("\nPassword Strength (1-4): ")
@@ -48,6 +46,7 @@ if pass_str > 3:
 	chars = chars + "@#$_&-+()/*!?^|{}[]"
 
 password = ""
+pass_len = random.randrange(min_char, max_char+1)
 for i in range(0, pass_len):
     n = random.randrange(0, len(chars))
     
